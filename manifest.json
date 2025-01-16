@@ -1,0 +1,31 @@
+{
+  "name": "F9 Hides the Folder Pane",
+  "version": "2025.1.1",
+  "developer": {
+    "name": "dreadnaut",
+    "url": "https://github.com/dreadnaut/f9-hides-the-folder-pane"
+  },
+  "icons": {
+    "48": "icon.svg",
+    "96": "icon.svg"
+  },
+  "description": "Press F9, or your favourite shortcut, to toggle the visibility of the Folder Pane",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "f9-hides-the-folderbar@dreadnaut",
+      "strict_min_version": "128.0"
+    }
+  },
+  "manifest_version": 3,
+  "background": {
+    "scripts": [ "background.js" ]
+  },
+  "commands": {
+    "toggle-folder-pane": {
+      "description": "Show or hide the Folder Pane",
+      "suggested_key": {
+        "default": "F9"
+      }
+    }
+  }
+}
